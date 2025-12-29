@@ -1,0 +1,199 @@
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+	background: black;
+	color: white;
+}
+
+header {
+   background: #007848;
+   align-items: center;
+	justify-content: space-between;
+	display: flex;
+	padding: 8px;
+}
+header ul {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	padding-left: 20px;
+	text-align: center; 
+}
+
+header img {
+	border-radius: 30px;
+	height: 60px; /* réduit la taille du logo */
+   width: 60px;
+   padding: 3px;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+	text-shadow: 1px 2px 0 #228B22;
+	font-weight: bold;
+	font-size: 9px;
+}
+header a:hover {
+	color: black;
+	text-shadow: 0 0 2px #228B22;
+}
+
+header a.active {
+  color: black;
+  text-shadow: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+	font-size: 2rem;
+	color: #228B22;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-family: 'Playfair Display', serif;
+	text-shadow: 0 2px 2px gold;
+	text-align: center;
+}
+
+p {
+	font-size: 16px;
+	letter-spacing: 1.2px;
+	margin-top: 30px;
+	text-align: center;
+	opacity: 0.9;
+}
+
+span {
+	color: #228B22;
+	font-style: italic;
+}
+
+.price-category h2 {
+	padding-top: 40px;
+	font-size: 1.2rem;
+	color: #228B22;
+	letter-spacing: 4px;
+	font-family: 'Playfair Display', serif;
+	text-shadow: 0.5px 0.5px 0 white;
+	text-align: center;
+}
+
+span {
+	color: #228B22;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.pricing-note {
+	font-size: 14px;
+	letter-spacing: 1.2px;
+	margin-top: 40px;
+	text-align: center;
+	opacity: 1;
+	font-style: italic;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+.btn {
+   display: inline-block;
+	margin: 0 auto;
+   padding: 10px 20px;
+   border-radius: 15px;
+   background: white;
+   color: #228B22;
+   font-weight: bold;
+   text-decoration: none;
+   text-align: center;
+   box-shadow: 0 0 20px #228B22, 0 0 20px #228B22;
+   transition: 0.3s;
+   font-size: 12px;
+}
+
+.btn:hover {
+   background: #228B22;
+   color: white;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+footer {
+	background: #007848;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	margin-top: 40px;
+}
+footer p:last-of-type {
+	font-style: italic;
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+footer p:first-of-type {
+	font-size: 10px;
+	margin: 0;
+}
+
+/* Responsivité pour petits téléphones */
+@media screen and (max-width: 400px) {
+
+  .Service-group {
+    grid-template-columns: 1fr; /* 1 seule colonne */
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .service img {
+    height: 180px; /* un peu plus haut pour respirer */
+  }
+
+  header ul {
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  header a {
+    font-size: 7px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

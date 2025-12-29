@@ -1,0 +1,224 @@
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+	background: black;
+	color: white;
+}
+
+header {
+   background: #007848;
+   align-items: center;
+	justify-content: space-between;
+	display: flex;
+	padding: 8px;
+}
+header ul {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	padding-left: 20px;
+	text-align: center; 
+}
+
+header img {
+	border-radius: 30px;
+	height: 60px; /* réduit la taille du logo */
+   width: 60px;
+   padding: 3px;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+	text-shadow: 1px 2px 0 #228B22;
+	font-weight: bold;
+	font-size: 9px;
+}
+header a:hover {
+	color: black;
+	text-shadow: 0 0 2px #228B22;
+}
+
+header a.active {
+  color: black;
+  text-shadow: none;
+}
+
+main {
+	background-image: url("fond1.jpg");
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 10px;
+	flex: 1;
+}
+
+h1 {
+	font-size: 2rem;
+	color: #228B22;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-family: 'Playfair Display', serif;
+	text-shadow: 0 2px 2px gold;
+	text-align: center;
+}
+
+p {
+	font-size: 16px;
+	letter-spacing: 1.2px;
+	margin-top: 30px;
+	text-align: center;
+	opacity: 0.9;
+}
+
+span {
+	color: #228B22;
+	font-style: italic;
+}
+
+
+.temoignages {
+	margin-bottom: 30px;
+	padding: 10px 15px;
+}
+
+.temoignages h2 {
+	text-align: center;
+  	font-family: "Playfair Display", serif;
+  	color: #CC2E7C;
+  	margin-bottom: 15px;
+  	font-size: 25px;
+}
+
+.personne {
+   display: flex;
+   align-items: center;
+   gap: 25px;
+   margin-bottom: 10px;
+	background: none;
+	border-radius: 10px;
+   border: 1px solid white;
+	padding: 10px;
+	box-shadow: 0 8px 20px rgba(34, 139, 34, 0.25);
+}
+
+.personne p {
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.temoignages .personne img {
+   width: 100px;
+   height: 90px;
+   border-radius: 50%;
+	object-fit: cover;
+	flex-shrink: 0;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+.btn {
+   display: inline-block;
+	margin: 0 auto;
+   padding: 10px 20px;
+   border-radius: 15px;
+   background: white;
+   color: #228B22;
+   font-weight: bold;
+   text-decoration: none;
+   text-align: center;
+   box-shadow: 0 0 20px #228B22, 0 0 20px #228B22;
+   transition: 0.3s;
+   font-size: 8px;
+}
+
+.btn:hover {
+   background: #228B22;
+   color: white;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+footer {
+	background: #007848;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	margin-top: 40px;
+}
+footer p:last-of-type {
+	font-style: italic;
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+footer p:first-of-type {
+	font-size: 10px;
+	margin: 0;
+}
+
+@media (min-width: 1024px) {
+
+  header a {
+    font-size: 10px;
+  }
+
+  .temoignages .personne img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .personne {
+    gap: 15px;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  header a {
+    font-size: 9px;
+  }
+
+  p {
+    font-size: 13px;
+    padding: 0 5px;
+  }
+
+  .temoignages .personne img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .btn {
+    font-size: 11px;
+    padding: 10px 18px;
+  }
+}
